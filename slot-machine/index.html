@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Machine</title>
+
+    <!-- Fonts (optional; safe to keep) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Preload a few images to reduce first-spin flicker -->
+    <link rel="preload" href="img/background.png" as="image" />
+    <link rel="preload" href="img/taptospin.png" as="image" />
+  </head>
+  <body>
+    <div class="aspect-container">
+      <div class="slot-machine-container" id="container">
+        <div class="slot-machine" id="slotMachine"></div>
+
+        <!-- Reels (viewport) -->
+        <div id="reel1" class="reel">
+          <div class="reel-inner">
+            <img src="img/cake.png" alt="Cake" />
+          </div>
+        </div>
+        <div id="reel2" class="reel">
+          <div class="reel-inner">
+            <img src="img/camera.png" alt="Camera" />
+          </div>
+        </div>
+        <div id="reel3" class="reel">
+          <div class="reel-inner">
+            <img src="img/champagnes.png" alt="Champagnes" />
+          </div>
+        </div>
+
+        <!-- Spin button -->
+        <button class="spin-button" id="spinButton" aria-label="Spin">
+          <img src="img/taptospin.png" alt="Spin" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Logic -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
